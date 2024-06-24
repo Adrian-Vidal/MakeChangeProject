@@ -45,7 +45,7 @@ public class CashRegister {
 			int numNickels = (int) ((modDimes - modNickels) / (nickel));
 			int numPennies = (int) ((modNickels - modPennies) / (penny));
 
-			System.out.println("\nTotal amount of change owed: $" + changeDue);
+			System.out.println("\nTotal amount of change owed: $" + String.format("%.2f", changeDue));
 			if (numTwenties > 0) {
 				System.out.println("Number of twenty dollar bills owed: " + numTwenties);
 			} else {
